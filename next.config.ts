@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images:{
     domains: []
+  },
+  experimental: {
+    appDir: true,
   }
 };
 
