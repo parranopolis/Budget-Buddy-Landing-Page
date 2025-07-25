@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #38a169;
+  --dark-primary: #2f855a;
+  --secondary: #81e6d9;
+  --dark-background: #2b6cb0;
+  --light-background: #fafafa;
+  --main-text: #2d3748;
+  --secondary-text: #4a5568;
+  --section-bg: #f7fafc;
+  --details-active-elements: #b9f5d0;
+  --error: #feb2b2;
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-background: var(--primary);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--primary);
+  }
+} */
+@layer utilities {
+  .small-text {
+    @apply text-[20px];
   }
 }
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background); */
+  color: var(--main-text);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* | Propósito             | Color                             | Hex       |
+| --------------------- | --------------------------------- | --------- |
+| **Primario (Acción)** | Verde suave (éxito, tranquilidad) | `#38A169` |
+| **Primario Oscuro**   | Verde más profundo (hover)        | `#2F855A` |
+| **Secundario**        | Azul pastel (calma y tecnología)  | `#81E6D9` |
+| **Fondo Claro**       | Gris muy claro / neutro           | `#FAFAFA` |
+| **Texto Principal**   | Gris oscuro                       | `#2D3748` |
+| **Texto Secundario**  | Gris medio                        | `#4A5568` |
+| **Fondo Secciones**   | Gris claro                        | `#F7FAFC` |
+| **Énfasis/Detalles**  | Verde menta (elementos activos)   | `#B9F5D0` |
+| **Error**             | Rojo claro                        | `#FEB2B2` | */
