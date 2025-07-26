@@ -3,7 +3,9 @@ export default function Features (){
 
     return(
         <>
-        <article className="bg-black text-white flex flex-col gap-20 m-auto px-7 pt-140 pb-25 relative mt-[-35rem] mask-t-from-80%">
+        <article className="bg-black text-white flex flex-col gap-20 m-auto px-7 pt-140 sm:pt-28 pb-25 relative mt-[-35rem] mask-t-from-80%
+        sm:mt-[0] sm:mask-t-from-100% 
+        ">
             <h2 className="text-center text-3xl">Everything You Need to Budget Smart</h2>
                 <Card style="" image={'receipt'} title='Receipt Scanning' text='Scan receipts with your camera and let AI extract the details automatically.'/>
                 <Card style="flex-row-reverse" image={'charts'} title='Visual Analytics' text='Beautifull chart and graphs to visualize your spending patterns and budget progress.'/>
